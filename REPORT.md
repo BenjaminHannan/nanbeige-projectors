@@ -103,7 +103,7 @@ Vision verdict: **PASS**. Sound verdict: **FAIL** (one of three marks missed), s
 - 05:45:41: I deleted the STOP file (confirmed gone) and started `autopilot.py --config …\autopilot-config.json` detached, cwd `code-v`, stdout appended to `runs\autopilot\v.out` exactly as the brief said. **It crashed at once**: `PermissionError: [Errno 13] Permission denied: '…\runs\autopilot\v.out'` (in `_run_child`, `open(out_path, "ab")`). The autopilot opens v.out itself for its child's output, and my cmd redirect was already holding that file open. The traceback is at the end of v.out.
 - 05:46:19: restarted the same command with stdout going to `C:\Users\benja\premonition-projectors\logs\autopilot_stdout.log` instead (so nothing under qonly-staging is held open). pid 11692.
 - Seen in `vn\run_v.log` / v.out: `05:46:55 [v] resume v-latest: opt_steps 2380/3877, data_pos 1572 (loaded 926 tensors, fresh 4)`, then `05:48:29 lesson 394: opt_steps 2387/3877` and `05:49:47 lesson 395: opt_steps 2393/3877`. **It continued from 2380, not from 0.** (The brief expected ~2340; the real pause point was 2380.) GPU afterwards: ~12.5–15.1 GB, 120–197 W.
-- Small oddity, not investigated: episode names in the new lessons read `c00p_v00000_…`, where before the pause they read `c00\ep_v00000_…`.
+- Lessons 394–395 used episodes named `c00p_v00000_…`; lesson 396 (05:51, opt_steps 2399) was back to `c00\ep_…`. I think that's just its data mix, but I didn't check.
 - The 04:47 Windows Update reboot also killed every other process on the PC (wbrain/runmatch/lab_sup etc., if they were running). I did not restart anything besides the autopilot. Check those.
 - Its console stdout now goes to my project log, not v.out. Next time you restart it by hand, you can point it back.
 
