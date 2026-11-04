@@ -70,4 +70,11 @@ Run `python mlx_projector.py` for its self-test (tiny random shapes). The encode
 ## Licenses and data terms
 
 - Nanbeige4.2-3B: Apache-2.0. SigLIP2: Apache-2.0. Whisper: MIT. The projector weights and code here: Apache-2.0.
-<!-- LICENSE_DATA -->
+- **Training data terms (read before using the weights commercially):**
+  - Vision: `lmms-lab/LLaVA-ReCap-558K` (captions written by LLaVA-NeXT-34B for the LCS-558K images, which come from
+    LAION / CC3M / SBU). The dataset card gives no license; LLaVA's data is released for **research use**, and the
+    caption-writer model has its own terms. Treat the vision projector as research-use.
+  - Sound: Clotho v2.1 (Tampere University). Captions: **experimental and non-commercial use only**, commercial use
+    prohibited (see Clotho's LICENSE; this notice is reproduced in `LICENSES/CLOTHO_LICENSE.txt`). Audio: Freesound
+    clips under their own CC licenses. WavCaps SoundBible subset: WavCaps says **academic use only**.
+  - So: code is Apache-2.0, but the trained weights inherit research / non-commercial restrictions from the data.
