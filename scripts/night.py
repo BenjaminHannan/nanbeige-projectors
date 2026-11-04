@@ -31,10 +31,13 @@ while True:
     time.sleep(30)
 P("vision training finished")
 # 2. vision eval
-run("eval_vision", [os.path.join(R, "eval_vision.py"), r"runs\vision\projector.safetensors", r"runs\vision\eval", "500"])
+if not os.path.exists(os.path.join(R, "runs", "vision", "eval", "vision_eval.json")):
+  run("eval_vision", [os.path.join(R, "eval_vision.py"), r"runs\vision\projector.safetensors", r"runs\vision\eval", "500"])
 # 3. audio smoke
 micro, accum = 8, 4
-run("smoke_audio", [os.path.join(R, "train.py"), "--modality", "audio", "--out", r"runs\smoke_audio", "--samples", "40000",
+_sl = os.path.join(R, "logs", "night_smoke_audio.log")
+if not (os.path.exists(_sl) and "SMOKE END" in open(_sl, encoding="utf-8", errors="ignore").read()):
+  run("smoke_audio", [os.path.join(R, "train.py"), "--modality", "audio", "--out", r"runs\smoke_audio", "--samples", "40000",
                     "--micro", str(micro), "--accum", str(accum), "--smoke_minutes", "4"])
 sl = open(os.path.join(R, "logs", "night_smoke_audio.log"), encoding="utf-8", errors="ignore").read()
 m = re.search(r"SMOKE END s/sample ([\d.]+) peak_alloc ([\d.]+) GB peak_reserved ([\d.]+) GB", sl)

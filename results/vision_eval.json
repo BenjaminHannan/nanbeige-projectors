@@ -1,0 +1,27 @@
+{
+ "n": 500,
+ "max_cap_tokens": 160,
+ "projector": "runs\\vision\\projector.safetensors",
+ "V1_top1": 0.676,
+ "V1_top1_lennorm": 0.824,
+ "shuffled_top1": 0.108,
+ "shuffled_top1_lennorm": 0.1,
+ "zeroed_top1": 0.096,
+ "V2_loss_image": 1.0478346506518776,
+ "V2_loss_noimage": 2.2390274314247574,
+ "V2_loss_zeroed": 9.122720834143085,
+ "V2_loss_shuffled": 1.6141229377675521,
+ "V2_reduction": 0.5320134823068646,
+ "V3_ok_frac": 1.0,
+ "video_smoke": {
+  "pan_reference": "The image displays a black and white template designed to guide someone on how to write a front-page story for a newspaper. The template is structured with various sections that are typically found on a newspaper's front page.\n\nAt the top, the title \"MEDIA TEMPLATE\" is printed in bold, capital letters. Below the title, there is a brief instruction that reads, \"How to write the front page of a news",
+  "pan_caption": "The video frames show a series of images that appear to be part of a media template or a news article template. The images are black and white and contain text and a blank space for content. The first frame shows a template with the title \"The News\" and a section for \"The Headline\" followed by a blank space for content. The second frame shows a template with the title \"The News\" and a section for \"The Lead\" followed by a blank space for",
+  "seq_references": [
+   "The image displays a logo for a company named \"HYBRID EVENT SOLUTIONS UK.\" The logo is composed of text and graphic elements. The text \"HYBRID\" is prominently featured in large, bold, uppercase letter",
+   "The image is of a DVD cover for a seminar titled \"Healing Toxic Injuries in Love Relationships.\" The cover features a warm orange background with the title text prominently displayed in large, bold, b",
+   "The image shows a table lamp with a classic design. The lamp has a cylindrical base that appears to be made of brass or a brass-like material, with a shiny, metallic finish. The base is connected to a",
+   "The image displays a rectangular caution sign with a yellow background and black text. The sign is designed to warn people about an upcoming sound horn, instructing them to proceed slowly. The text on"
+  ],
+  "seq_caption": "frame 1, t=0s\n The frame shows a book cover with the title \"Health in Relationships: Solutions for UK\" in bold, capital letters. The author's name, \"Judy Smith,\" is displayed in smaller, italicized text below the title. The cover features a stylized illustration of a person with a raised eyebrow, suggesting a sense of concern or attention. The background is a light, textured color, possibly a light beige or cream. The style of the cover is modern and clean, with a focus on the text and the illustration. frame 2, t=2s\n The frame shows a close"
+ }
+}

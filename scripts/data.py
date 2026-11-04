@@ -73,9 +73,9 @@ def load_holdout(n=500, seed=1234):
     import pyarrow.parquet as pq
     from PIL import Image
     pf = pq.ParquetFile(os.path.join(RECAP_DIR, HOLDOUT_SHARD))
-    t = pf.read_row_group(0, columns=["id", "image", "conversations"]).to_pylist()
-    if len(t) < n:
-        t += pf.read_row_group(1, columns=["id", "image", "conversations"]).to_pylist()
+    t, g = [], 0
+    while len(t) < 4 * n and g < pf.num_row_groups:      # a pool of >= 4n rows, then a fixed random sample
+        t += pf.read_row_group(g, columns=["id", "image", "conversations"]).to_pylist(); g += 1
     idx = list(range(len(t))); random.Random(seed).shuffle(idx)
     out = []
     for j in idx[:n]:

@@ -4,7 +4,10 @@ Vision and sound "projectors" that let **Nanbeige4.2-3B** (a text-only, natively
 video frames and sounds as input, LLaVA-style. As far as we could find, these are the first public vision/audio
 adapters for Nanbeige (checked all Nanbeige repos on Hugging Face on 2026-11-03).
 
-<!-- RESULTS_TABLE -->
+**Status:** vision projector ✅ passed all its pre-set tests (weights in `weights/vision_projector.safetensors`).
+Sound projector: see below.
+
+<!-- AUDIO_STATUS -->
 
 ## In plain English
 
@@ -41,7 +44,46 @@ no weight decay, bf16 autocast, gradient checkpointing through the frozen LLM, 1
 positions. fc2 initialised at 0.1× default scale so the first outputs match Nanbeige's embedding scale.
 Trained on one RTX 5070 Ti (16 GB).
 
-<!-- DATA_AND_RESULTS -->
+## Data and training run
+
+**Vision.** 4 parquet shards of `lmms-lab/LLaVA-ReCap-558K` (85,868 images with detailed LLaVA-NeXT-34B captions);
+shard 25 held out and never trained on. 56,320 samples (1,760 steps × 32, ~0.66 epoch), 2 h 24 min on an RTX 5070 Ti
+(0.153 s/sample, peak 10.5 GB allocated / 11.3 GB in nvidia-smi). Final train loss ≈ 1.01.
+
+<!-- AUDIO_DATA -->
+
+## Results (pass marks were fixed before training)
+
+Held-out sets: 500 images from the never-trained ReCap shard 25; Clotho v2.1 *evaluation* split for sound.
+Retrieval = rank the true caption against 9 random other held-out captions by caption log-likelihood given the media
+(chance 10 %). Controls: **zeroed** = encoder features set to 0; **shuffled** = another item's features.
+Loss = mean per-token caption loss (captions cut to ≤ 160 tokens at a sentence end).
+
+| mark | target | result | controls | verdict |
+|---|---|---|---|---|
+| V1 retrieval top-1 of 10 (n=500) | ≥ 60 % | 67.6 % | zeroed 9.6 %, shuffled 10.8 % (chance 10 %) | **PASS** |
+| V2 held-out caption loss vs no image | ≥ 25 % lower | 1.048 vs 2.239 (53.2 % lower) | zeroed 9.123, shuffled 1.614 | **PASS** |
+| V3 50 greedy captions non-degenerate | ≥ 90 % | 100 % | | **PASS** |
+
+<!-- AUDIO_TABLE -->
+
+Extra numbers: vision retrieval with length-normalised log-likelihood: 82.4 % (shuffled 10.0 %).
+Important for reading V2: *any* image, even the wrong one, already lowers the loss (shuffled 1.61 vs no image 2.24),
+because it tells the model "write a ReCap-style description". The fair content check is true vs shuffled image:
+1.05 vs 1.61 (35 % lower), together with retrieval (67.6 % vs 10.8 %).
+
+Sample captions: `results/vision_captions.html` (50 held-out images with thumbnails).
+
+**Video smoke test (no pass mark).** 4 frames (`frame k, t=…s` + 64 tokens each), never trained on multi-image input.
+A simulated camera pan over one held-out image gave: *"The video frames show a series of images that appear to be part of a media template or a news article template. The images are black and white and contain text and a blank space for content. The first frame shows a template with the title "The News" and a section for "The Headline" followed by a bla…"*.
+Four unrelated images: the model described frame 1 but mixed in text from frame 2 (*"Health in Relationships:
+Solutions for UK"* combines frame 1 "Hybrid Event Solutions UK" and frame 2 "Healing Toxic Injuries in Love
+Relationships"). So multi-frame input works, but frames bleed into each other: a multi-image fine-tune is needed for real video.
+
+**Limitations.** Stage-1 only (projector trained, LLM frozen): it describes, it does not follow complex visual
+instructions. Small text in images is often misread or invented (e.g. book titles). 64 tokens per image at 256×256 loses
+fine detail. Trained with Nanbeige's default system prompt; other system prompts are untested. Trained against the bf16
+LLM; using it with a quantized (e.g. 8-bit MLX) Nanbeige is untested.
 
 ## How to use (transformers)
 
