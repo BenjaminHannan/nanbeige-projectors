@@ -5,9 +5,8 @@ video frames and sounds as input, LLaVA-style. As far as we could find, these ar
 adapters for Nanbeige (checked all Nanbeige repos on Hugging Face on 2026-11-03).
 
 **Status:** vision projector ✅ passed all its pre-set tests (weights in `weights/vision_projector.safetensors`).
-Sound projector: see below.
-
-<!-- AUDIO_STATUS -->
+Sound projector ❌ **not released**: it missed its retrieval mark (A1: 30.2 % vs the required 40 %), although
+it clearly hears something (shuffled-audio control 9 %). Its code, data recipe and results are here; the weights are not.
 
 ## In plain English
 
@@ -15,7 +14,7 @@ A language model only understands words. A picture model (SigLIP2) turns a pictu
 that describe what's in it, and a sound model (Whisper's listening half) does the same for sounds. Those
 numbers are in the "wrong language" for Nanbeige. A **projector** is a tiny translator (two layers) that turns
 them into the kind of numbers Nanbeige uses for words. We kept Nanbeige and the picture/sound models
-completely frozen and trained only the translator, by showing it hundreds of thousands of
+completely frozen and trained only the translator, by showing it tens of thousands of
 (picture, description) and (sound, description) pairs and asking Nanbeige to write the description.
 Afterwards Nanbeige can "see" a picture or "hear" a sound: it describes it and can tell which description
 matches. It is a small first step: it describes, it does not deeply reason about images.
@@ -50,7 +49,11 @@ Trained on one RTX 5070 Ti (16 GB).
 shard 25 held out and never trained on. 56,320 samples (1,760 steps × 32, ~0.66 epoch), 2 h 24 min on an RTX 5070 Ti
 (0.153 s/sample, peak 10.5 GB allocated / 11.3 GB in nvidia-smi). Final train loss ≈ 1.01.
 
-<!-- AUDIO_DATA -->
+**Sound (not released).** Clotho v2.1 development + validation (5 captions per clip) + WavCaps SoundBible:
+25,652 caption pairs, 33.6 h of audio, converted to 16 kHz mono. Held out: Clotho evaluation split. 31,008 samples
+(969 of 1,077 planned steps: the PC rebooted for a Windows update at 04:47, training resumed from the 04:39
+checkpoint and stopped at a fixed 05:32 deadline, at LR ≈ 3 % of peak). 0.24 s/sample (≈ 278 audio tokens per clip),
+peak 11.7 GB reserved. Final train loss ≈ 2.4.
 
 ## Results (pass marks were fixed before training)
 
@@ -64,13 +67,20 @@ Loss = mean per-token caption loss (captions cut to ≤ 160 tokens at a sentence
 | V1 retrieval top-1 of 10 (n=500) | ≥ 60 % | 67.6 % | zeroed 9.6 %, shuffled 10.8 % (chance 10 %) | **PASS** |
 | V2 held-out caption loss vs no image | ≥ 25 % lower | 1.048 vs 2.239 (53.2 % lower) | zeroed 9.123, shuffled 1.614 | **PASS** |
 | V3 50 greedy captions non-degenerate | ≥ 90 % | 100 % | | **PASS** |
+| A1 retrieval top-1 of 10 (n=500) | ≥ 40 % | 30.2 % | zeroed 10.8 %, shuffled 9.0 % | **FAIL** |
+| A2 held-out caption loss vs no audio | ≥ 15 % lower | 2.498 vs 7.051 (64.6 % lower) | zeroed 6.576, shuffled 3.141 | **PASS** |
+| A3 30 greedy captions non-degenerate | ≥ 90 % | 100 % | | **PASS** |
 
-<!-- AUDIO_TABLE -->
 
 Extra numbers: vision retrieval with length-normalised log-likelihood: 82.4 % (shuffled 10.0 %).
 Important for reading V2: *any* image, even the wrong one, already lowers the loss (shuffled 1.61 vs no image 2.24),
 because it tells the model "write a ReCap-style description". The fair content check is true vs shuffled image:
 1.05 vs 1.61 (35 % lower), together with retrieval (67.6 % vs 10.8 %).
+
+Sound, extra numbers: length-normalised retrieval 37.4 % (shuffled 8.6 %). The no-audio loss (7.05) is inflated
+because without audio Nanbeige answers "Describe this sound." in a completely different way; the fair check is true vs
+shuffled audio: 2.50 vs 3.14 (20 % lower). Greedy captions (`results/audio_captions.html`) are fluent and Clotho-style,
+often partly right (crowds, wind, running water, machines) and sometimes wrong (bees heard as "a machine… car horn").
 
 Sample captions: `results/vision_captions.html` (50 held-out images with thumbnails).
 

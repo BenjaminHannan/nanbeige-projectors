@@ -1,0 +1,17 @@
+{
+ "n": 500,
+ "max_cap_tokens": 160,
+ "projector": "runs\\audio\\projector.safetensors",
+ "mean_audio_tokens": 277.634,
+ "A1_top1": 0.302,
+ "A1_top1_lennorm": 0.374,
+ "shuffled_top1": 0.09,
+ "shuffled_top1_lennorm": 0.086,
+ "zeroed_top1": 0.108,
+ "A2_loss_audio": 2.4982895144161215,
+ "A2_loss_noaudio": 7.051457367115726,
+ "A2_loss_zeroed": 6.575536696125107,
+ "A2_loss_shuffled": 3.1407650982852173,
+ "A2_reduction": 0.6457059322138393,
+ "A3_ok_frac": 1.0
+}

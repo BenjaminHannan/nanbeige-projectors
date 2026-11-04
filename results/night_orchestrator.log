@@ -1,0 +1,25 @@
+02:46:37 vision training finished
+02:46:37 start eval_vision ['C:\\Users\\benja\\premonition-projectors\\eval_vision.py', 'runs\\vision\\projector.safetensors', 'runs\\vision\\eval', '500']
+02:46:53 end eval_vision 1
+02:46:53 start smoke_audio ['C:\\Users\\benja\\premonition-projectors\\train.py', '--modality', 'audio', '--out', 'runs\\smoke_audio', '--samples', '40000', '--micro', '8', '--accum', '4', '--smoke_minutes', '4']
+02:51:12 end smoke_audio 0
+02:51:12 audio plan 38880 samples
+02:51:12 start train_audio ['C:\\Users\\benja\\premonition-projectors\\train.py', '--modality', 'audio', '--out', 'runs\\audio', '--samples', '38880', '--micro', '8', '--accum', '4', '--deadline', '05:30']
+02:55:58 end train_audio 4294967295
+02:55:58 start eval_audio ['C:\\Users\\benja\\premonition-projectors\\eval_audio.py', 'runs\\audio\\projector.safetensors', 'runs\\audio\\eval', '500']
+02:56:08 end eval_audio 1
+02:56:08 NIGHT DONE
+---- relaunch
+02:56:28 vision training finished
+02:56:28 start eval_vision ['C:\\Users\\benja\\premonition-projectors\\eval_vision.py', 'runs\\vision\\projector.safetensors', 'runs\\vision\\eval', '500']
+03:09:02 end eval_vision 0
+03:09:02 audio plan 34464 samples
+03:09:02 start train_audio ['C:\\Users\\benja\\premonition-projectors\\train.py', '--modality', 'audio', '--out', 'runs\\audio', '--samples', '34464', '--micro', '8', '--accum', '4', '--deadline', '05:30']
+---- relaunch after Windows Update reboot (boot 04:47:38)
+04:57:32 vision training finished
+04:57:32 audio plan 8032 samples
+04:57:32 start train_audio ['C:\\Users\\benja\\premonition-projectors\\train.py', '--modality', 'audio', '--out', 'runs\\audio', '--samples', '8032', '--micro', '8', '--accum', '4', '--deadline', '05:32']
+05:32:08 end train_audio 0
+05:32:08 start eval_audio ['C:\\Users\\benja\\premonition-projectors\\eval_audio.py', 'runs\\audio\\projector.safetensors', 'runs\\audio\\eval', '500']
+05:45:01 end eval_audio 0
+05:45:01 NIGHT DONE

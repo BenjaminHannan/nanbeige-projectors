@@ -4,7 +4,7 @@ wait for vision training -> vision eval -> audio smoke (4 min) -> audio training
 import os, sys, time, json, re, subprocess
 R = r"C:\Users\benja\premonition-projectors"
 PY = os.path.join(R, "venv", "Scripts", "python.exe")
-AUDIO_END = "05:30"           # audio training must stop by then (eval ~15 min, Bedwars resume before 06:15)
+AUDIO_END = "05:32"           # audio training must stop by then (eval ~15 min, Bedwars resume before 06:15)
 state = {}
 def P(*a): print(time.strftime("%H:%M:%S"), *a, flush=True)
 def save(): json.dump(state, open(os.path.join(R, "logs", "night_state.json"), "w"), indent=1)
