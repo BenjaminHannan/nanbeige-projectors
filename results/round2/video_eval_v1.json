@@ -1,0 +1,40 @@
+{
+ "tag": "v1",
+ "projector": "runs/vision/projector.safetensors",
+ "VID1_top1": 0.2866666666666667,
+ "VID1_frame_shuffled_top1": 0.17666666666666667,
+ "VID1_same_images_alone_top1": 0.72,
+ "VID1_gap_points": 43.333333333333336,
+ "VID1_n": 300,
+ "VID2_V1_top1": 0.682,
+ "VID3_top1": 0.20625,
+ "VID3_n": 160,
+ "examples": {
+  "seq4": {
+   "output": "Frame 1 (t=0s): The image shows a close-up of a high-speed camera with a lens and a body. The camera appears to be a professional-grade device with a sleek design. The lens is clear and shows a view of a room with a wooden door and a window. The camera is mounted on a tripod or similar support. The background is out of focus. Frame 2 (t=2s): The image shows a high-speed camera with a lens and a body. The camera is mounted on a tripod or similar support. The lens is clear and shows a view of a room with a wooden door and a window. The camera is mounted on a tripod or similar support. The background is out of focus. Frame 3 (t=4",
+   "references": [
+    "The image shows an interior view of a cathedral or church, focusing on the ceiling and the upper part of the walls. The ceiling is a complex geometric pattern o",
+    "The image shows a product, specifically a security camera, which is a dome-style model. The camera is predominantly white with a clear dome cover that allows a ",
+    "The image shows a collection of traditional Japanese folding fans, known as \"uchiwa,\" displayed in front of a weathered wooden door. The fans are arranged in a ",
+    "The image shows a close-up of a mechanical assembly, which appears to be a part of a larger machine or engine. The central focus is on a cylindrical component w"
+   ]
+  },
+  "videos": [
+   {
+    "video_id": "video8324",
+    "reference": "a rock band performs on stage",
+    "output": "The video shows a live performance on stage. There are four individuals on stage, all of whom are playing instruments and singing. The person on the left is playing a guitar and singing. The person in the middle is playing a saxophone and singing. The person on the right is playing a drum and singing. The person in the back is playing a guitar and singing. The stage is illuminated by a spotlight"
+   },
+   {
+    "video_id": "video8826",
+    "reference": "lady speaking on her show",
+    "output": "The video appears to be a clip from a television show or a movie. It shows a scene where a woman is talking to a child, and the child is looking at the woman with a smile. The woman is wearing a blue blazer and a patterned top, and she is holding a phone. The child is wearing a plaid shirt and is looking at the woman with a smile. The setting"
+   },
+   {
+    "video_id": "video7500",
+    "reference": "a soccer team walking out on the field",
+    "output": "The video shows a soccer match on a green field. The match is between two teams, one wearing white and the other wearing yellow. The white team is in the foreground, with players running and kicking the ball. The yellow team is in the background, with players running and kicking the ball. The white team is in the foreground, with players running and kicking the ball. The yellow team is in"
+   }
+  ]
+ }
+}

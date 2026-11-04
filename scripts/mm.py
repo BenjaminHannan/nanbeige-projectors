@@ -3,8 +3,8 @@ prompt building (chat template), and the loss on caption tokens only."""
 import os, math, torch, torch.utils.checkpoint, torch.nn as nn, torch.nn.functional as F
 
 os.environ.pop("REQUESTS_CA_BUNDLE", None)
-ROOT = r"C:\Users\benja\premonition-projectors"
-LLM_PATH = r"C:\Users\benja\premonition-wincheck\models\nanbeige-hf"   # bf16 Nanbeige/Nanbeige4.2-3B
+ROOT = os.environ.get("PROJ_ROOT", r"C:\Users\benja\premonition-projectors")
+LLM_PATH = os.environ.get("NANBEIGE_PATH", r"C:\Users\benja\premonition-wincheck\models\nanbeige-hf")   # bf16 Nanbeige/Nanbeige4.2-3B
 SIGLIP_PATH = os.path.join(ROOT, "models", "siglip2-base-patch16-256")
 WHISPER_PATH = os.path.join(ROOT, "models", "whisper-small")
 MEDIA = "<<MEDIA>>"

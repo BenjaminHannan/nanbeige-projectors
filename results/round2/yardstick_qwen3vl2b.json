@@ -1,0 +1,9 @@
+{
+ "model": "Qwen/Qwen3-VL-2B-Instruct",
+ "image_pixels": "256x256 (64 visual tokens)",
+ "V1_top1": 0.658,
+ "VID1_top1": 0.4866666666666667,
+ "VID1_same_images_alone_top1": 0.75,
+ "VID3_top1": 0.28125,
+ "VID3_n": 160
+}

@@ -95,6 +95,33 @@ instructions. Small text in images is often misread or invented (e.g. book title
 fine detail. Trained with Nanbeige's default system prompt; other system prompts are untested. Trained against the bf16
 LLM; using it with a quantized (e.g. 8-bit MLX) Nanbeige is untested.
 
+## Round 2 (2026-11-04): video v2 and sound v2, both failed, not released
+
+Two single-change experiments on rented RTX 5090s. Pass marks were fixed before results; full details are in `REPORT.md`
+(Round 2) and `results/round2/`. **Neither v2 projector passed, so the released weights are still the v1 vision projector above.**
+
+**Video v2.** One change: continue v1 on multi-frame sequences (50 % single images, 40 % 2–4 unrelated images, 10 % crop
+"pans"; format `Frame k (t=Ns):` + 64 tokens per frame). 49,888 samples, 0.172 s/sample, peak 17.1 GB reserved.
+
+| test (held out) | target | v1 | v2 | Qwen3-VL-2B (yardstick, 64 tokens/image) |
+|---|---|---|---|---|
+| VID1: caption for frame k in a 4-image sequence, top-1 of 10 (n=300) | ≥ 60 %, gap ≤ 5, ≥ v1 + 15 | 28.7 % | **56.7 %** (FAIL) | 48.7 % |
+| same images scored alone | | 72.0 % | 77.7 % | 75.0 % |
+| VID1 with frames shuffled (control) | | 17.7 % | 10.0 % | |
+| VID2: single-image V1 (n=500) | ≥ 62.6 % | 68.2 % | **71.2 %** (PASS) | 65.8 % |
+| VID3: MSR-VTT test clips, 8 frames, top-1 of 10 (n=160) | ≥ v1 + 10 | 20.6 % | **18.8 %** (FAIL) | 28.1 % |
+
+**Sound v2.** One change: 6.5× more audio (Clotho dev+val, SoundBible, 40,000 WavCaps-FreeSound and 30,000 WavCaps-AudioSet_SL
+clips: 95,652 pairs, 220 h) and a full schedule. 69,088 samples, 0.107 s/sample, peak 15.8 GB reserved.
+Leakage rule: FreeSound clips whose ID is a Clotho-evaluation sound ID or in WavCaps' test blacklist were removed:
+1,833 clips, including all 917 Clotho-eval IDs present in WavCaps.
+
+| test (500 held-out Clotho-eval clips) | target | v1 | v2 | Qwen2.5-Omni-3B thinker (yardstick, 4.7B params) |
+|---|---|---|---|---|
+| A1 retrieval top-1 of 10 | ≥ 40 % | 30.2 % | **30.6 %** (FAIL) (shuffled 10.2 %, zeroed 10.0 %) | 34.4 % |
+| A2 loss vs no audio | ≥ 15 % lower | 64.6 % | 64.0 % (PASS) | |
+| A3 non-degenerate captions | ≥ 90 % | 100 % | 100 % (PASS) | |
+
 ## How to use (transformers)
 
 ```python
@@ -130,3 +157,7 @@ Run `python mlx_projector.py` for its self-test (tiny random shapes). The encode
     prohibited (see Clotho's LICENSE; this notice is reproduced in `LICENSES/CLOTHO_LICENSE.txt`). Audio: Freesound
     clips under their own CC licenses. WavCaps SoundBible subset: WavCaps says **academic use only**.
   - So: code is Apache-2.0, but the trained weights inherit research / non-commercial restrictions from the data.
+  - Round 2 (no weights released): WavCaps FreeSound and AudioSet_SL subsets are **academic use only** (WavCaps terms;
+    FreeSound audio under each clip's CC license, AudioSet from YouTube). MSR-VTT test clips were used **for evaluation
+    only** (frames are not redistributed; `results/round2/msrvtt_clips.json` lists video IDs and captions). Yardstick
+    models Qwen3-VL-2B-Instruct and Qwen2.5-Omni-3B were only run for comparison; see their own licenses.

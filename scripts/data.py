@@ -2,7 +2,7 @@
 import io, os, re, json, random, threading, queue
 import numpy as np
 
-ROOT = r"C:\Users\benja\premonition-projectors"
+ROOT = os.environ.get("PROJ_ROOT", r"C:\Users\benja\premonition-projectors")
 RECAP_DIR = os.path.join(ROOT, "data", "recap")
 HOLDOUT_SHARD = "train-00025.parquet"      # never trained on
 

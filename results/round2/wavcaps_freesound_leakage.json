@@ -1,0 +1,11 @@
+{
+ "subset": "FreeSound",
+ "clotho_eval_ids": 1041,
+ "wavcaps_blacklist_ids": 2078,
+ "clotho_eval_ids_present_in_wavcaps_freesound": 917,
+ "blacklist_ids_present": 1833,
+ "removed": 1833,
+ "eligible_after_filter": 155424,
+ "packed_clips": 40000,
+ "packed_hours": 103.84535185763889
+}

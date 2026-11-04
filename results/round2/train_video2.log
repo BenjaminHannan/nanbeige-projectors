@@ -1,0 +1,177 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 176.58it/s]
+07:39:40 plan 49888 steps 1559
+07:39:46 {"t": "07:39:46", "step": 1, "loss": 1.2732, "ema": 1.2732, "lr": 6.521739130434782e-06, "s_per_sample": 0.1834, "peak_alloc_gb": 14.55, "peak_reserved_gb": 16.58, "smi": "16426 MiB, 499.81 W, 100 %"}
+07:39:51 {"t": "07:39:51", "step": 2, "loss": 1.3377, "ema": 1.2745, "lr": 1.3043478260869564e-05, "s_per_sample": 0.1668, "peak_alloc_gb": 14.55, "peak_reserved_gb": 16.58, "smi": "16428 MiB, 499.92 W, 100 %"}
+07:39:55 {"t": "07:39:55", "step": 3, "loss": 1.3483, "ema": 1.276, "lr": 1.9565217391304346e-05, "s_per_sample": 0.1563, "peak_alloc_gb": 14.55, "peak_reserved_gb": 16.58, "smi": "16428 MiB, 498.96 W, 100 %"}
+07:40:33 {"t": "07:40:33", "step": 10, "loss": 1.351, "ema": 1.276, "lr": 6.521739130434782e-05, "s_per_sample": 0.1658, "peak_alloc_gb": 14.73, "peak_reserved_gb": 17.09}
+07:41:28 {"t": "07:41:28", "step": 20, "loss": 1.1899, "ema": 1.2654, "lr": 0.00013043478260869564, "s_per_sample": 0.1692, "peak_alloc_gb": 14.76, "peak_reserved_gb": 17.09}
+07:42:21 {"t": "07:42:21", "step": 30, "loss": 1.0949, "ema": 1.2396, "lr": 0.00019565217391304346, "s_per_sample": 0.1679, "peak_alloc_gb": 14.76, "peak_reserved_gb": 17.09}
+07:43:14 {"t": "07:43:14", "step": 40, "loss": 1.0633, "ema": 1.206, "lr": 0.0002608695652173913, "s_per_sample": 0.1674, "peak_alloc_gb": 14.78, "peak_reserved_gb": 17.09}
+07:44:09 {"t": "07:44:09", "step": 50, "loss": 0.9744, "ema": 1.1756, "lr": 0.00029999708979047473, "s_per_sample": 0.1682, "peak_alloc_gb": 14.78, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 500.16 W, 100 %"}
+07:45:06 {"t": "07:45:06", "step": 60, "loss": 0.9869, "ema": 1.1444, "lr": 0.00029994535587361994, "s_per_sample": 0.1696, "peak_alloc_gb": 14.78, "peak_reserved_gb": 17.09}
+07:46:03 {"t": "07:46:03", "step": 70, "loss": 0.9769, "ema": 1.1187, "lr": 0.0002998289763070035, "s_per_sample": 0.1708, "peak_alloc_gb": 14.78, "peak_reserved_gb": 17.09}
+07:47:01 {"t": "07:47:01", "step": 80, "loss": 0.9311, "ema": 1.0957, "lr": 0.00029964800126512176, "s_per_sample": 0.1722, "peak_alloc_gb": 14.78, "peak_reserved_gb": 17.09}
+07:47:56 {"t": "07:47:56", "step": 90, "loss": 1.0689, "ema": 1.0787, "lr": 0.0002994025087713927, "s_per_sample": 0.172, "peak_alloc_gb": 14.78, "peak_reserved_gb": 17.09}
+07:48:47 {"t": "07:48:47", "step": 100, "loss": 1.0302, "ema": 1.0656, "lr": 0.0002990926046645178, "s_per_sample": 0.1708, "peak_alloc_gb": 14.78, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 499.89 W, 100 %"}
+07:49:42 {"t": "07:49:42", "step": 110, "loss": 0.9362, "ema": 1.0501, "lr": 0.00029871842255285225, "s_per_sample": 0.1709, "peak_alloc_gb": 14.78, "peak_reserved_gb": 17.09}
+07:49:42 saved ckpt 110 6276
+07:50:36 {"t": "07:50:36", "step": 120, "loss": 0.9579, "ema": 1.0396, "lr": 0.00029828012375680233, "s_per_sample": 0.1707, "peak_alloc_gb": 14.78, "peak_reserved_gb": 17.09}
+07:51:31 {"t": "07:51:31", "step": 130, "loss": 0.9971, "ema": 1.0301, "lr": 0.0002977778972392758, "s_per_sample": 0.1708, "peak_alloc_gb": 14.78, "peak_reserved_gb": 17.09}
+07:52:28 {"t": "07:52:28", "step": 140, "loss": 1.0313, "ema": 1.0245, "lr": 0.0002972119595242149, "s_per_sample": 0.1714, "peak_alloc_gb": 14.78, "peak_reserved_gb": 17.09}
+07:53:23 {"t": "07:53:23", "step": 150, "loss": 1.0144, "ema": 1.0208, "lr": 0.0002965825546032464, "s_per_sample": 0.1714, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 500.08 W, 100 %"}
+07:54:16 {"t": "07:54:16", "step": 160, "loss": 0.9676, "ema": 1.0147, "lr": 0.00029588995383049015, "s_per_sample": 0.1711, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+07:55:08 {"t": "07:55:08", "step": 170, "loss": 0.9608, "ema": 1.0116, "lr": 0.00029513445580557087, "s_per_sample": 0.1706, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+07:56:04 {"t": "07:56:04", "step": 180, "loss": 1.0098, "ema": 1.0066, "lr": 0.0002943163862448832, "s_per_sample": 0.1709, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+07:57:00 {"t": "07:57:00", "step": 190, "loss": 1.0292, "ema": 1.002, "lr": 0.00029343609784116643, "s_per_sample": 0.1711, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+07:57:58 {"t": "07:57:58", "step": 200, "loss": 0.9148, "ema": 0.9997, "lr": 0.0002924939701114486, "s_per_sample": 0.1716, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 499.94 W, 100 %"}
+07:58:52 {"t": "07:58:52", "step": 210, "loss": 1.0648, "ema": 0.9952, "lr": 0.0002914904092334262, "s_per_sample": 0.1714, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+07:59:46 {"t": "07:59:46", "step": 220, "loss": 0.9402, "ema": 0.99, "lr": 0.00029042584787034953, "s_per_sample": 0.1712, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+07:59:46 saved ckpt 220 12618
+08:00:37 {"t": "08:00:37", "step": 230, "loss": 0.9922, "ema": 0.9872, "lr": 0.00028930074498448934, "s_per_sample": 0.1707, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:01:33 {"t": "08:01:33", "step": 240, "loss": 0.9783, "ema": 0.9856, "lr": 0.0002881155856392654, "s_per_sample": 0.1709, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:02:28 {"t": "08:02:28", "step": 250, "loss": 0.9163, "ema": 0.9842, "lr": 0.00028687088079012226, "s_per_sample": 0.171, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 500.28 W, 100 %"}
+08:03:20 {"t": "08:03:20", "step": 260, "loss": 0.9581, "ema": 0.9791, "lr": 0.0002855671670642414, "s_per_sample": 0.1707, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:04:18 {"t": "08:04:18", "step": 270, "loss": 0.9789, "ema": 0.9763, "lr": 0.0002842050065291871, "s_per_sample": 0.1711, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:05:13 {"t": "08:05:13", "step": 280, "loss": 1.0188, "ema": 0.9749, "lr": 0.00028278498645058247, "s_per_sample": 0.1711, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:06:10 {"t": "08:06:10", "step": 290, "loss": 0.9982, "ema": 0.9732, "lr": 0.0002813077190389232, "s_per_sample": 0.1713, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:07:06 {"t": "08:07:06", "step": 300, "loss": 0.929, "ema": 0.9687, "lr": 0.0002797738411856365, "s_per_sample": 0.1714, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 500.12 W, 100 %"}
+08:08:02 {"t": "08:08:02", "step": 310, "loss": 1.0068, "ema": 0.9636, "lr": 0.00027818401418849923, "s_per_sample": 0.1716, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:08:59 {"t": "08:08:59", "step": 320, "loss": 0.9801, "ema": 0.9674, "lr": 0.00027653892346653377, "s_per_sample": 0.1717, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:09:52 {"t": "08:09:52", "step": 330, "loss": 0.9745, "ema": 0.9684, "lr": 0.00027483927826450473, "s_per_sample": 0.1715, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:09:52 saved ckpt 330 18936
+08:10:47 {"t": "08:10:47", "step": 340, "loss": 0.9549, "ema": 0.9679, "lr": 0.00027308581134714377, "s_per_sample": 0.1716, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:11:41 {"t": "08:11:41", "step": 350, "loss": 1.0204, "ema": 0.963, "lr": 0.0002712792786832339, "s_per_sample": 0.1715, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 500.08 W, 100 %"}
+08:12:37 {"t": "08:12:37", "step": 360, "loss": 0.9835, "ema": 0.96, "lr": 0.00026942045911969043, "s_per_sample": 0.1716, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:13:32 {"t": "08:13:32", "step": 370, "loss": 0.9251, "ema": 0.9597, "lr": 0.00026751015404577786, "s_per_sample": 0.1716, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:14:25 {"t": "08:14:25", "step": 380, "loss": 1.0042, "ema": 0.9626, "lr": 0.00026554918704760886, "s_per_sample": 0.1715, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:15:21 {"t": "08:15:21", "step": 390, "loss": 1.0135, "ema": 0.9669, "lr": 0.0002635384035530729, "s_per_sample": 0.1716, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:16:16 {"t": "08:16:16", "step": 400, "loss": 1.0239, "ema": 0.9687, "lr": 0.0002614786704673488, "s_per_sample": 0.1716, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 499.83 W, 100 %"}
+08:17:12 {"t": "08:17:12", "step": 410, "loss": 0.9475, "ema": 0.9638, "lr": 0.00025937087579915724, "s_per_sample": 0.1716, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:18:05 {"t": "08:18:05", "step": 420, "loss": 0.9816, "ema": 0.9629, "lr": 0.0002572159282779158, "s_per_sample": 0.1715, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:18:58 {"t": "08:18:58", "step": 430, "loss": 0.9263, "ema": 0.9623, "lr": 0.0002550147569619596, "s_per_sample": 0.1714, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:19:53 {"t": "08:19:53", "step": 440, "loss": 0.9461, "ema": 0.9575, "lr": 0.00025276831083799884, "s_per_sample": 0.1714, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:19:53 saved ckpt 440 25367
+08:20:49 {"t": "08:20:49", "step": 450, "loss": 0.9127, "ema": 0.9503, "lr": 0.00025047755841198346, "s_per_sample": 0.1714, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 499.69 W, 100 %"}
+08:21:45 {"t": "08:21:45", "step": 460, "loss": 0.9246, "ema": 0.9479, "lr": 0.0002481434872915533, "s_per_sample": 0.1715, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:22:40 {"t": "08:22:40", "step": 470, "loss": 0.984, "ema": 0.9502, "lr": 0.0002457671037602527, "s_per_sample": 0.1715, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:23:32 {"t": "08:23:32", "step": 480, "loss": 0.9626, "ema": 0.9489, "lr": 0.0002433494323436936, "s_per_sample": 0.1714, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:24:27 {"t": "08:24:27", "step": 490, "loss": 0.9008, "ema": 0.9435, "lr": 0.00024089151536785337, "s_per_sample": 0.1714, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:25:19 {"t": "08:25:19", "step": 500, "loss": 0.917, "ema": 0.9457, "lr": 0.00023839441250969929, "s_per_sample": 0.1712, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 500.03 W, 100 %"}
+08:26:15 {"t": "08:26:15", "step": 510, "loss": 0.9571, "ema": 0.9461, "lr": 0.00023585920034033185, "s_per_sample": 0.1713, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:27:08 {"t": "08:27:08", "step": 520, "loss": 0.9758, "ema": 0.9476, "lr": 0.00023328697186084484, "s_per_sample": 0.1711, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:28:03 {"t": "08:28:03", "step": 530, "loss": 0.9195, "ema": 0.9468, "lr": 0.00023067883603110175, "s_per_sample": 0.1712, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:28:59 {"t": "08:28:59", "step": 540, "loss": 0.8782, "ema": 0.9432, "lr": 0.0002280359172916323, "s_per_sample": 0.1712, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:29:51 {"t": "08:29:51", "step": 550, "loss": 0.8989, "ema": 0.9443, "lr": 0.00022535935507885443, "s_per_sample": 0.1711, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 500.06 W, 100 %"}
+08:29:56 saved ckpt 551 31837
+08:30:44 {"t": "08:30:44", "step": 560, "loss": 0.9103, "ema": 0.9466, "lr": 0.00022265030333383122, "s_per_sample": 0.171, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:31:42 {"t": "08:31:42", "step": 570, "loss": 0.9097, "ema": 0.9461, "lr": 0.00021990993000477478, "s_per_sample": 0.1712, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:32:37 {"t": "08:32:37", "step": 580, "loss": 0.9111, "ema": 0.9472, "lr": 0.0002171394165435107, "s_per_sample": 0.1712, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:33:35 {"t": "08:33:35", "step": 590, "loss": 0.9334, "ema": 0.9474, "lr": 0.00021433995739612133, "s_per_sample": 0.1713, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:34:26 {"t": "08:34:26", "step": 600, "loss": 0.952, "ema": 0.9473, "lr": 0.00021151275948798625, "s_per_sample": 0.1712, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 498.99 W, 100 %"}
+08:35:24 {"t": "08:35:24", "step": 610, "loss": 0.9753, "ema": 0.9443, "lr": 0.00020865904170344306, "s_per_sample": 0.1713, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:36:18 {"t": "08:36:18", "step": 620, "loss": 0.9038, "ema": 0.9409, "lr": 0.0002057800343602923, "s_per_sample": 0.1712, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:37:17 {"t": "08:37:17", "step": 630, "loss": 1.0191, "ema": 0.9432, "lr": 0.00020287697867937246, "s_per_sample": 0.1715, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:38:12 {"t": "08:38:12", "step": 640, "loss": 0.9385, "ema": 0.9423, "lr": 0.00019995112624943533, "s_per_sample": 0.1715, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:39:04 {"t": "08:39:04", "step": 650, "loss": 0.9254, "ema": 0.9376, "lr": 0.0001970037384875508, "s_per_sample": 0.1714, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 500.26 W, 100 %"}
+08:39:56 {"t": "08:39:56", "step": 660, "loss": 0.8903, "ema": 0.9382, "lr": 0.00019403608609527435, "s_per_sample": 0.1712, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:40:01 saved ckpt 661 38107
+08:40:50 {"t": "08:40:50", "step": 670, "loss": 0.9551, "ema": 0.9387, "lr": 0.00019104944851081244, "s_per_sample": 0.1712, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:41:42 {"t": "08:41:42", "step": 680, "loss": 0.9922, "ema": 0.9354, "lr": 0.00018804511335742029, "s_per_sample": 0.171, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:42:40 {"t": "08:42:40", "step": 690, "loss": 0.9653, "ema": 0.9393, "lr": 0.00018502437588827173, "s_per_sample": 0.1712, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:43:38 {"t": "08:43:38", "step": 700, "loss": 0.8995, "ema": 0.9412, "lr": 0.00018198853842803914, "s_per_sample": 0.1713, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 499.86 W, 100 %"}
+08:44:33 {"t": "08:44:33", "step": 710, "loss": 0.9699, "ema": 0.9416, "lr": 0.0001789389098114245, "s_per_sample": 0.1713, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:45:30 {"t": "08:45:30", "step": 720, "loss": 0.9409, "ema": 0.941, "lr": 0.00017587680481888446, "s_per_sample": 0.1714, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:46:26 {"t": "08:46:26", "step": 730, "loss": 0.9108, "ema": 0.9402, "lr": 0.00017280354360979126, "s_per_sample": 0.1715, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:47:17 {"t": "08:47:17", "step": 740, "loss": 0.9245, "ema": 0.9378, "lr": 0.00016972045115327505, "s_per_sample": 0.1713, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:48:13 {"t": "08:48:13", "step": 750, "loss": 0.9076, "ema": 0.9365, "lr": 0.00016662885665699262, "s_per_sample": 0.1714, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 500.29 W, 100 %"}
+08:49:07 {"t": "08:49:07", "step": 760, "loss": 0.9494, "ema": 0.9338, "lr": 0.00016353009299406864, "s_per_sample": 0.1713, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:50:03 {"t": "08:50:03", "step": 770, "loss": 0.9238, "ema": 0.9329, "lr": 0.0001604254961284567, "s_per_sample": 0.1714, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:50:04 saved ckpt 770 44375
+08:50:56 {"t": "08:50:56", "step": 780, "loss": 1.0322, "ema": 0.9374, "lr": 0.00015731640453896755, "s_per_sample": 0.1713, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:51:49 {"t": "08:51:49", "step": 790, "loss": 0.9619, "ema": 0.9371, "lr": 0.00015420415864221378, "s_per_sample": 0.1712, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:52:43 {"t": "08:52:43", "step": 800, "loss": 0.9199, "ema": 0.9344, "lr": 0.00015109010021471803, "s_per_sample": 0.1712, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 499.98 W, 100 %"}
+08:53:37 {"t": "08:53:37", "step": 810, "loss": 0.9124, "ema": 0.9327, "lr": 0.00014797557181443608, "s_per_sample": 0.1712, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:54:34 {"t": "08:54:34", "step": 820, "loss": 0.8789, "ema": 0.9303, "lr": 0.00014486191620194196, "s_per_sample": 0.1713, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:55:24 {"t": "08:55:24", "step": 830, "loss": 0.9612, "ema": 0.9309, "lr": 0.00014175047576152645, "s_per_sample": 0.1711, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:56:19 {"t": "08:56:19", "step": 840, "loss": 0.9583, "ema": 0.9337, "lr": 0.0001386425919224576, "s_per_sample": 0.1711, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:57:15 {"t": "08:57:15", "step": 850, "loss": 0.9061, "ema": 0.9344, "lr": 0.00013553960458065274, "s_per_sample": 0.1711, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 499.99 W, 100 %"}
+08:58:12 {"t": "08:58:12", "step": 860, "loss": 0.9646, "ema": 0.9371, "lr": 0.00013244285152101185, "s_per_sample": 0.1712, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+08:59:09 {"t": "08:59:09", "step": 870, "loss": 0.9887, "ema": 0.9382, "lr": 0.00012935366784066097, "s_per_sample": 0.1713, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:00:02 {"t": "09:00:02", "step": 880, "loss": 0.8961, "ema": 0.9356, "lr": 0.0001262733853733544, "s_per_sample": 0.1712, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:00:08 saved ckpt 881 50645
+09:00:58 {"t": "09:00:58", "step": 890, "loss": 1.0054, "ema": 0.9328, "lr": 0.00012320333211528369, "s_per_sample": 0.1713, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:01:53 {"t": "09:01:53", "step": 900, "loss": 0.9049, "ema": 0.9313, "lr": 0.00012014483165254149, "s_per_sample": 0.1713, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 499.86 W, 100 %"}
+09:02:47 {"t": "09:02:47", "step": 910, "loss": 0.9538, "ema": 0.9325, "lr": 0.00011709920259048592, "s_per_sample": 0.1713, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:03:46 {"t": "09:03:46", "step": 920, "loss": 0.9373, "ema": 0.9303, "lr": 0.00011406775798525347, "s_per_sample": 0.1714, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:04:38 {"t": "09:04:38", "step": 930, "loss": 0.9081, "ema": 0.9318, "lr": 0.0001110518047776632, "s_per_sample": 0.1713, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:05:36 {"t": "09:05:36", "step": 940, "loss": 0.8967, "ema": 0.9312, "lr": 0.000108052643229758, "s_per_sample": 0.1714, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:06:31 {"t": "09:06:31", "step": 950, "loss": 0.9438, "ema": 0.9336, "lr": 0.00010507156636422526, "s_per_sample": 0.1714, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 500.12 W, 100 %"}
+09:07:26 {"t": "09:07:26", "step": 960, "loss": 0.932, "ema": 0.9304, "lr": 0.00010210985940693831, "s_per_sample": 0.1714, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:08:23 {"t": "09:08:23", "step": 970, "loss": 0.9181, "ema": 0.9281, "lr": 9.91687992328596e-05, "s_per_sample": 0.1715, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:09:20 {"t": "09:09:20", "step": 980, "loss": 0.9433, "ema": 0.9245, "lr": 9.624965381554422e-05, "s_per_sample": 0.1716, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:10:12 saved ckpt 989 56799
+09:10:17 {"t": "09:10:17", "step": 990, "loss": 0.9222, "ema": 0.9256, "lr": 9.335368168048062e-05, "s_per_sample": 0.1716, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:11:15 {"t": "09:11:15", "step": 1000, "loss": 0.96, "ema": 0.9204, "lr": 9.048213136250524e-05, "s_per_sample": 0.1717, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 499.81 W, 100 %"}
+09:12:09 {"t": "09:12:09", "step": 1010, "loss": 0.916, "ema": 0.9201, "lr": 8.763624086752387e-05, "s_per_sample": 0.1717, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:13:04 {"t": "09:13:04", "step": 1020, "loss": 0.8825, "ema": 0.9174, "lr": 8.48172371387728e-05, "s_per_sample": 0.1717, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:14:01 {"t": "09:14:01", "step": 1030, "loss": 0.8959, "ema": 0.9154, "lr": 8.202633552784909e-05, "s_per_sample": 0.1718, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:14:57 {"t": "09:14:57", "step": 1040, "loss": 0.8893, "ema": 0.9199, "lr": 7.926473927073825e-05, "s_per_sample": 0.1718, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:15:56 {"t": "09:15:56", "step": 1050, "loss": 0.8702, "ema": 0.9188, "lr": 7.653363896906575e-05, "s_per_sample": 0.1719, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 499.69 W, 100 %"}
+09:16:51 {"t": "09:16:51", "step": 1060, "loss": 0.907, "ema": 0.9191, "lr": 7.383421207679493e-05, "s_per_sample": 0.1719, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:17:42 {"t": "09:17:42", "step": 1070, "loss": 0.8986, "ema": 0.9214, "lr": 7.11676223925937e-05, "s_per_sample": 0.1718, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:18:41 {"t": "09:18:41", "step": 1080, "loss": 0.9458, "ema": 0.9202, "lr": 6.853501955808842e-05, "s_per_sample": 0.1719, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:19:35 {"t": "09:19:35", "step": 1090, "loss": 0.877, "ema": 0.9174, "lr": 6.593753856222103e-05, "s_per_sample": 0.1719, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:20:14 saved ckpt 1097 63053
+09:20:33 {"t": "09:20:33", "step": 1100, "loss": 0.915, "ema": 0.9205, "lr": 6.33762992519233e-05, "s_per_sample": 0.172, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 499.94 W, 100 %"}
+09:21:29 {"t": "09:21:29", "step": 1110, "loss": 0.8824, "ema": 0.9191, "lr": 6.085240584931962e-05, "s_per_sample": 0.172, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:22:22 {"t": "09:22:22", "step": 1120, "loss": 0.9229, "ema": 0.9206, "lr": 5.8366946475665925e-05, "s_per_sample": 0.1719, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:23:18 {"t": "09:23:18", "step": 1130, "loss": 0.9054, "ema": 0.92, "lr": 5.5920992682229765e-05, "s_per_sample": 0.1719, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:24:10 {"t": "09:24:10", "step": 1140, "loss": 0.8905, "ema": 0.9204, "lr": 5.351559898831486e-05, "s_per_sample": 0.1719, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:25:07 {"t": "09:25:07", "step": 1150, "loss": 0.9475, "ema": 0.9195, "lr": 5.1151802426628126e-05, "s_per_sample": 0.1719, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 500.03 W, 100 %"}
+09:26:00 {"t": "09:26:00", "step": 1160, "loss": 0.9075, "ema": 0.9188, "lr": 4.883062209618541e-05, "s_per_sample": 0.1719, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:26:56 {"t": "09:26:56", "step": 1170, "loss": 0.9437, "ema": 0.92, "lr": 4.6553058722949985e-05, "s_per_sample": 0.1719, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:27:51 {"t": "09:27:51", "step": 1180, "loss": 0.9312, "ema": 0.9206, "lr": 4.432009422839107e-05, "s_per_sample": 0.1719, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:28:48 {"t": "09:28:48", "step": 1190, "loss": 0.997, "ema": 0.9234, "lr": 4.213269130614986e-05, "s_per_sample": 0.172, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:29:43 {"t": "09:29:43", "step": 1200, "loss": 0.8884, "ema": 0.9233, "lr": 3.999179300699571e-05, "s_per_sample": 0.1719, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 499.77 W, 100 %"}
+09:30:20 saved ckpt 1207 69315
+09:30:34 {"t": "09:30:34", "step": 1210, "loss": 0.9404, "ema": 0.9214, "lr": 3.7898322332250066e-05, "s_per_sample": 0.1719, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:31:32 {"t": "09:31:32", "step": 1220, "loss": 0.8758, "ema": 0.9208, "lr": 3.5853181835854835e-05, "s_per_sample": 0.1719, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:32:30 {"t": "09:32:30", "step": 1230, "loss": 0.9149, "ema": 0.9215, "lr": 3.385725323525626e-05, "s_per_sample": 0.172, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:33:25 {"t": "09:33:25", "step": 1240, "loss": 0.9108, "ema": 0.9163, "lr": 3.1911397031271514e-05, "s_per_sample": 0.172, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:34:22 {"t": "09:34:22", "step": 1250, "loss": 0.9162, "ema": 0.9141, "lr": 3.0016452137102804e-05, "s_per_sample": 0.1721, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 500.24 W, 100 %"}
+09:35:20 {"t": "09:35:20", "step": 1260, "loss": 0.8598, "ema": 0.9141, "lr": 2.8173235516658204e-05, "s_per_sample": 0.1721, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:36:13 {"t": "09:36:13", "step": 1270, "loss": 0.92, "ema": 0.9205, "lr": 2.638254183233592e-05, "s_per_sample": 0.1721, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:37:07 {"t": "09:37:07", "step": 1280, "loss": 0.9628, "ema": 0.9227, "lr": 2.4645143102422594e-05, "s_per_sample": 0.172, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:38:00 {"t": "09:38:00", "step": 1290, "loss": 0.8709, "ema": 0.9224, "lr": 2.296178836825495e-05, "s_per_sample": 0.172, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:38:56 {"t": "09:38:56", "step": 1300, "loss": 0.8989, "ema": 0.9218, "lr": 2.1333203371286846e-05, "s_per_sample": 0.172, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 500.15 W, 100 %"}
+09:39:53 {"t": "09:39:53", "step": 1310, "loss": 0.844, "ema": 0.9227, "lr": 1.9760090240201796e-05, "s_per_sample": 0.1721, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:40:22 saved ckpt 1315 75472
+09:40:49 {"t": "09:40:49", "step": 1320, "loss": 0.9258, "ema": 0.9216, "lr": 1.8243127188205593e-05, "s_per_sample": 0.1721, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:41:43 {"t": "09:41:43", "step": 1330, "loss": 0.9542, "ema": 0.9246, "lr": 1.6782968220629715e-05, "s_per_sample": 0.1721, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:42:37 {"t": "09:42:37", "step": 1340, "loss": 0.863, "ema": 0.9216, "lr": 1.5380242852971052e-05, "s_per_sample": 0.172, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:43:32 {"t": "09:43:32", "step": 1350, "loss": 0.9428, "ema": 0.9216, "lr": 1.403555583949022e-05, "s_per_sample": 0.172, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 499.55 W, 100 %"}
+09:44:27 {"t": "09:44:27", "step": 1360, "loss": 0.9095, "ema": 0.9178, "lr": 1.2749486912485101e-05, "s_per_sample": 0.172, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:45:21 {"t": "09:45:21", "step": 1370, "loss": 0.9178, "ema": 0.9154, "lr": 1.1522590532351928e-05, "s_per_sample": 0.172, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:46:17 {"t": "09:46:17", "step": 1380, "loss": 0.9151, "ema": 0.9163, "lr": 1.0355395648541703e-05, "s_per_sample": 0.172, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:47:13 {"t": "09:47:13", "step": 1390, "loss": 0.8615, "ema": 0.9175, "lr": 9.248405471515579e-06, "s_per_sample": 0.1721, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:48:09 {"t": "09:48:09", "step": 1400, "loss": 0.893, "ema": 0.9141, "lr": 8.202097255796375e-06, "s_per_sample": 0.1721, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 500.01 W, 100 %"}
+09:49:01 {"t": "09:49:01", "step": 1410, "loss": 0.966, "ema": 0.9121, "lr": 7.216922094210914e-06, "s_per_sample": 0.172, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:49:57 {"t": "09:49:57", "step": 1420, "loss": 0.9947, "ema": 0.9166, "lr": 6.293304723411346e-06, "s_per_sample": 0.172, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:50:24 saved ckpt 1425 81697
+09:50:50 {"t": "09:50:50", "step": 1430, "loss": 0.9204, "ema": 0.9177, "lr": 5.43164334075909e-06, "s_per_sample": 0.172, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:51:48 {"t": "09:51:48", "step": 1440, "loss": 0.9491, "ema": 0.9178, "lr": 4.632309432650821e-06, "s_per_sample": 0.172, "peak_alloc_gb": 14.8, "peak_reserved_gb": 17.09}
+09:52:45 {"t": "09:52:45", "step": 1450, "loss": 0.9218, "ema": 0.9154, "lr": 3.895647614360326e-06, "s_per_sample": 0.1721, "peak_alloc_gb": 14.81, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 499.76 W, 100 %"}
+09:53:42 {"t": "09:53:42", "step": 1460, "loss": 0.8494, "ema": 0.9125, "lr": 3.2219754814651555e-06, "s_per_sample": 0.1721, "peak_alloc_gb": 14.81, "peak_reserved_gb": 17.09}
+09:54:43 {"t": "09:54:43", "step": 1470, "loss": 0.932, "ema": 0.9134, "lr": 2.6115834729222294e-06, "s_per_sample": 0.1723, "peak_alloc_gb": 14.81, "peak_reserved_gb": 17.09}
+09:55:36 {"t": "09:55:36", "step": 1480, "loss": 0.9242, "ema": 0.9111, "lr": 2.0647347458515096e-06, "s_per_sample": 0.1722, "peak_alloc_gb": 14.81, "peak_reserved_gb": 17.09}
+09:56:28 {"t": "09:56:28", "step": 1490, "loss": 0.9803, "ema": 0.9095, "lr": 1.5816650620815385e-06, "s_per_sample": 0.1722, "peak_alloc_gb": 14.81, "peak_reserved_gb": 17.09}
+09:57:22 {"t": "09:57:22", "step": 1500, "loss": 0.9156, "ema": 0.9097, "lr": 1.1625826865059141e-06, "s_per_sample": 0.1721, "peak_alloc_gb": 14.81, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 499.79 W, 100 %"}
+09:58:17 {"t": "09:58:17", "step": 1510, "loss": 0.8583, "ema": 0.9114, "lr": 8.076682972944615e-07, "s_per_sample": 0.1721, "peak_alloc_gb": 14.81, "peak_reserved_gb": 17.09}
+09:59:07 {"t": "09:59:07", "step": 1520, "loss": 0.8903, "ema": 0.9103, "lr": 5.17074907997811e-07, "s_per_sample": 0.172, "peak_alloc_gb": 14.81, "peak_reserved_gb": 17.09}
+10:00:02 {"t": "10:00:02", "step": 1530, "loss": 0.9261, "ema": 0.911, "lr": 2.9092780157891625e-07, "s_per_sample": 0.172, "peak_alloc_gb": 14.81, "peak_reserved_gb": 17.09}
+10:00:24 saved ckpt 1534 87862
+10:00:59 {"t": "10:00:59", "step": 1540, "loss": 0.8768, "ema": 0.9147, "lr": 1.2932447640011113e-07, "s_per_sample": 0.1721, "peak_alloc_gb": 14.81, "peak_reserved_gb": 17.09}
+10:01:54 {"t": "10:01:54", "step": 1550, "loss": 0.9075, "ema": 0.9124, "lr": 3.233460418878286e-08, "s_per_sample": 0.1721, "peak_alloc_gb": 14.81, "peak_reserved_gb": 17.09, "smi": "16916 MiB, 499.99 W, 100 %"}
+10:02:45 saved final 1559 89292
+10:02:45 TRAINING DONE

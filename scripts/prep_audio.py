@@ -6,7 +6,7 @@ import numpy as np, soundfile as sf
 from scipy.signal import resample_poly
 from math import gcd
 
-ROOT = r"C:\Users\benja\premonition-projectors"
+ROOT = os.environ.get("PROJ_ROOT", r"C:\Users\benja\premonition-projectors")
 OUT = os.path.join(ROOT, "data", "audio"); os.makedirs(OUT, exist_ok=True)
 MAX_S = 30
 
@@ -47,9 +47,13 @@ def clotho(split):
         caps[r["file_name"]] = [r[f"caption_{k}"] for k in range(1, 6)]
     arch = os.path.join(d, f"clotho_audio_{split}.7z")
     tmp = os.path.join(d, "x_" + split)
-    import py7zr
-    with py7zr.SevenZipFile(arch, "r") as z:
-        z.extractall(tmp)
+    import subprocess
+    if shutil.which("7z"):
+        subprocess.run(["7z", "x", "-y", "-o" + tmp, arch], check=True, stdout=subprocess.DEVNULL)
+    else:
+        import py7zr
+        with py7zr.SevenZipFile(arch, "r") as z:
+            z.extractall(tmp)
     def items():
         for p in sorted(glob.glob(os.path.join(tmp, "**", "*.wav"), recursive=True)):
             b = os.path.basename(p)

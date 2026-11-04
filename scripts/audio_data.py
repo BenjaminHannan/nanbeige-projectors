@@ -3,9 +3,9 @@ Train = Clotho development (+ validation if present) x 5 captions + WavCaps Soun
 import os, json, random
 import numpy as np
 
-ROOT = r"C:\Users\benja\premonition-projectors"
+ROOT = os.environ.get("PROJ_ROOT", r"C:\Users\benja\premonition-projectors")
 A = os.path.join(ROOT, "data", "audio")
-TRAIN_PACKS = ["clotho_development", "clotho_validation", "soundbible"]
+TRAIN_PACKS = ["clotho_development", "clotho_validation", "soundbible", "wavcaps_freesound", "wavcaps_audioset_sl"]
 HOLDOUT_PACK = "clotho_evaluation"
 
 

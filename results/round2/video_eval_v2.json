@@ -1,0 +1,40 @@
+{
+ "tag": "v2",
+ "projector": "runs/video2/projector.safetensors",
+ "VID1_top1": 0.5666666666666667,
+ "VID1_frame_shuffled_top1": 0.1,
+ "VID1_same_images_alone_top1": 0.7766666666666666,
+ "VID1_gap_points": 21.0,
+ "VID1_n": 300,
+ "VID2_V1_top1": 0.712,
+ "VID3_top1": 0.1875,
+ "VID3_n": 160,
+ "examples": {
+  "seq4": {
+   "output": "Frame 1:  The image depicts the interior of a large, vaulted ceiling with a central focus on a circular opening. \nFrame 2:  The image shows a high-speed dome camera with a white body and a black lens. \nFrame 3:  The image depicts a scene that appears to be a traditional Japanese garden or a similar setting. \nFrame 4:  The image shows a tablet with a protective case that has a cutout for a specific type of camera. The cutout is designed to fit a high-speed dome camera, as indicated by the text on the case.",
+   "references": [
+    "The image shows an interior view of a cathedral or church, focusing on the ceiling and the upper part of the walls. The ceiling is a complex geometric pattern o",
+    "The image shows a product, specifically a security camera, which is a dome-style model. The camera is predominantly white with a clear dome cover that allows a ",
+    "The image shows a collection of traditional Japanese folding fans, known as \"uchiwa,\" displayed in front of a weathered wooden door. The fans are arranged in a ",
+    "The image shows a close-up of a mechanical assembly, which appears to be a part of a larger machine or engine. The central focus is on a cylindrical component w"
+   ]
+  },
+  "videos": [
+   {
+    "video_id": "video8324",
+    "reference": "a rock band performs on stage",
+    "output": "The image is a black and white photograph of a live music performance. There are four individuals on stage, each holding a musical instrument and singing into a microphone. The person in the center is a man with a beard, wearing a red shirt and a black hat, and he is holding a guitar. The person to his left is a woman with long hair, wearing a black dress and a black hat"
+   },
+   {
+    "video_id": "video8826",
+    "reference": "lady speaking on her show",
+    "output": "The image is a still from a television show, likely a reality show or a program where participants are interacting in a public setting. The scene is set in a classroom or a similar educational environment. In the foreground, there is a woman with long, wavy red hair, wearing a light blue blazer and a patterned top. She is smiling and appears to be engaged in a conversation."
+   },
+   {
+    "video_id": "video7500",
+    "reference": "a soccer team walking out on the field",
+    "output": "The image captures a dynamic moment from a soccer match. The scene is set on a well-maintained soccer field with a vibrant green grass. In the foreground, a soccer player in a white jersey is in the middle of a powerful shot, his body contorted in a dynamic pose as he strikes the ball with his right foot. The ball, a classic black and white sphere, is mid-flight"
+   }
+  ]
+ }
+}

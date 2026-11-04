@@ -1,0 +1,7 @@
+{
+ "model": "Qwen/Qwen2.5-Omni-3B (thinker only)",
+ "thinker_params": 4703464448,
+ "A1_top1": 0.344,
+ "n": 500,
+ "note": "same 500 clips, same candidate sets as eval_audio.py; caption = first reference"
+}
